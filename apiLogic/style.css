@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+button {
+    height: 80px;
+    font-size: 2rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(128, 196, 151);
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+#lista-tarefas {
+    display: grid;
+    gap: 20px;
+    padding: 20px 10px;
+
+}
+
+li {
+    list-style: circle;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 3px;
+
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(0, 146, 83);
+}
