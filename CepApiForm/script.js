@@ -7,6 +7,8 @@ const ufInput = document.getElementById("uf-input");
 
 const errorMessage = document.querySelector(".error");
 
+//01001000
+
 async function FillCepInfo() {
     if (cepInput.value.length == 8) {
         try {
@@ -27,11 +29,12 @@ async function FillCepInfo() {
             else {
                 showError("cep-error", "O CEP inserido é inválido!")
             }
-            //01001000
+
         }
 
         catch (error) {
             console.log("invalid error:" + error)
+            showError("cep-error", error)
         }
 
     }
